@@ -1,0 +1,8 @@
+- @docs.each do |x|
+  %h2= link_to x.title, x
+  %p= time_ago_in_words(x.created_at)
+  %p= truncate(x.content, length:20)
+
+=link_to "New Doc", new_doc_path
+
+=link_to "Home Page", welcome_index_path
