@@ -2,6 +2,8 @@
   %h2= link_to x.title, x
   %p= time_ago_in_words(x.created_at)
   %p= truncate(x.content, length:20)
+  User id :
+  %p= x.user_id
 
 =link_to "New Doc", new_doc_path
 
